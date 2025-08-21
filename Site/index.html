@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8"> <!-- Define o conjunto de caracteres para UTF-8, suportando acentuação -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Torna o site responsivo em dispositivos móveis -->
+    <title>Sistema Teste</title> <!-- Título exibido na aba do navegador -->
+    <link rel="stylesheet" href="css/style.css"> <!-- Link para o arquivo de estilos CSS -->
+    <link rel="icon" href="img/icone-teste.png" type="icone-teste"> <!-- Ícone do site exibido na aba do navegador -->
+</head>
+<body>
+    <!-- Tela de login -->
+    <div>
+        <form id="loginForm" action="login" method="post"> <!-- Formulário de login, envia dados para 'login' via POST -->
+            <label for="username">Usuário:</label> <!-- Rótulo do campo de usuário -->
+            <input type="text" id="username" name="username" required> <!-- Campo para digitar o usuário, obrigatório -->
+            <br>
+            <label for="password">Senha:</label> <!-- Rótulo do campo de senha -->
+            <input type="password" id="password" name="password" required> <!-- Campo para digitar a senha, obrigatório -->
+            <br>
+            <button type="submit">Entrar</button> <!-- Botão para enviar o formulário -->
+        </form>
+    </div>
+    <script>
+        // Exibe uma mensagem no console quando a página é carregada
+        console.log("Página carregada com sucesso!");
+
+        // Adiciona um evento ao formulário de login para mostrar um alerta ao clicar em "Entrar"
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+            alert('Está pagina está em desenvolvimento...'); // Mostra a mensagem ao usuário
+            // O formulário será enviado normalmente após o alerta
+        });
+    </script>
+    <footer>
+        <p>Desenvolvido por Levi Rodrigues</p>
+        <p>Este é um projeto de estudo e não deve ser utilizado em produção.</p>
+    </footer>
+</body>
+</html>
